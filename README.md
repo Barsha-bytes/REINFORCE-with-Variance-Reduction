@@ -4,12 +4,12 @@
 **Institution:** Regis University  
 **Course:** MSDS - Data Science Practicum  
 
-## 🚀 Project Overview
+## Project Overview
 This repository contains a PyTorch implementation of the **REINFORCE** algorithm (Monte Carlo Policy Gradient) applied to the `CartPole-v1` environment. The project evaluates the performance impact of a **State-Value Baseline** on training stability and convergence.
 
 In Reinforcement Learning, policy gradients are notoriously noisy. By implementing a baseline estimate $V(s)$, we center our returns to reduce variance while maintaining an unbiased estimator.
 
-## 📊 Performance Analysis
+## Performance Analysis
 The results below highlight the critical difference between vanilla policy gradients and those optimized with a baseline.
 
 ### 1. Variance Reduction Comparison
@@ -31,14 +31,14 @@ This visualization tracks the reward progression, showing the speed at which the
 * **Value Network:** A critic network used to estimate $V(s)$ and compute the advantage: $A = G_t - V(s)$.
 * **Data Handling:** Custom `pad_sequences` logic to process inhomogeneous training data across multiple seeds.
 
-## 📋 Dependencies
+## Dependencies
 * Python 3.9+
 * `torch`
 * `gymnasium`
 * `numpy`
 * `matplotlib`
 
-## 💻 Getting Started
+## Getting Started
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/your-username/MSDS-Lab6-PolicyGradients.git](https://github.com/your-username/MSDS-Lab6-PolicyGradients.git)
